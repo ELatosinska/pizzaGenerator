@@ -1,7 +1,6 @@
 package helpers;
 
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import model.Pizza;
 import model.Size;
 
@@ -15,10 +14,8 @@ public class PizzaHelper {
 
     public String convertPizzaToString(Pizza pizza) {
         StringBuilder sb = new StringBuilder();
-        sb.append(pizza.getSize());
-        for(var ingredient : pizza.getIngredients()) {
-            sb.append(ingredient);
-        }
+        sb.append(pizza.getSize()).append(";");
+        sb.append(ingredientsHelper.convertListOfIngredientsToString(pizza.getIngredients()));
         return sb.toString();
     }
 
