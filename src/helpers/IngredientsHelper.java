@@ -27,7 +27,7 @@ public class IngredientsHelper {
 
     private String convertIngredientToString(Ingredient ingredient) {
         StringBuilder sb = new StringBuilder();
-        sb.append(ingredient.getName());
+        sb.append(ingredient.getName()).append(",");
         sb.append(ingredient.isVegetarian() ? "vege" : "meat");
         return sb.toString();
     }
