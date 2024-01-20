@@ -1,6 +1,7 @@
 package helpers;
 
 import lombok.EqualsAndHashCode;
+import model.Ingredient;
 import model.Pizza;
 import model.Size;
 
@@ -12,6 +13,10 @@ public class PizzaHelper {
         ingredientsHelper = new IngredientsHelper();
     }
 
+    public boolean isPizzaVegetarian(Pizza pizza) {
+        return pizza.getIngredients().stream()
+                .allMatch(Ingredient::isVegetarian);
+    }
     public String convertPizzaToString(Pizza pizza) {
         StringBuilder sb = new StringBuilder();
         sb.append(pizza.getSize()).append(";");
