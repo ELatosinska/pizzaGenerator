@@ -1,0 +1,1 @@
+Aplikacja pozwala na wygenerowanie pizzy o podanym rozmiarze, oraz ilości składników. Pizza może być wegetariańska. Wygenerowane propozycje można zapisać do pliku, a następnie z tego pliku wczytać spowrotem do programu. Można również obliczyć cenę pizzy na podstawie jej rozmiaru, ilości oraz katgorii składników (warzywne, czy mięsne).
