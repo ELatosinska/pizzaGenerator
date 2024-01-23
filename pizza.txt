@@ -1,0 +1,2 @@
+LARGE;szynka,meat;ser feta,vege;kurczak,meat;salami,meat;groszek zielony,vege;
+GIANT;kurczak,meat;krewetki,meat;oliwki czarne,vege;krewetki,meat;kukurydza,vege;
